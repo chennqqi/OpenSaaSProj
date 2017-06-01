@@ -1,0 +1,66 @@
+# -*- coding: utf-8 -*-
+import __init__
+from datetime import date
+from pony.orm import *
+
+
+def define_flightline_arrival(db):
+
+    class Plat_flightline_arrival(db.Entity):
+        id = PrimaryKey(int, sql_type="int(20)", auto=True)
+        tm = Required(date)
+        pub = Required(str)
+        ver = Required(str)
+        uv_all = Optional(int, sql_type="int(11)")
+        pv_all = Optional(int, sql_type="int(11)")
+        hour_0 = Optional(int, sql_type="int(11)", default=0)
+        hourpv_0 = Optional(int, sql_type="int(11)", default=0)
+        hour_1 = Optional(int, sql_type="int(11)", default=0)
+        hourpv_1 = Optional(int, sql_type="int(11)", default=0)
+        hour_2 = Optional(int, sql_type="int(11)", default=0)
+        hourpv_2 = Optional(int, sql_type="int(11)", default=0)
+        hour_3 = Optional(int, sql_type="int(11)", default=0)
+        hourpv_3 = Optional(int, sql_type="int(11)", default=0)
+        hour_4 = Optional(int, sql_type="int(11)", default=0)
+        hourpv_4 = Optional(int, sql_type="int(11)", default=0)
+        hour_5 = Optional(int, sql_type="int(11)", default=0)
+        hourpv_5 = Optional(int, sql_type="int(11)", default=0)
+        hour_6 = Optional(int, sql_type="int(11)", default=0)
+        hourpv_6 = Optional(int, sql_type="int(11)", default=0)
+        hour_7 = Optional(int, sql_type="int(11)", default=0)
+        hourpv_7 = Optional(int, sql_type="int(11)", default=0)
+        hour_8 = Optional(int, sql_type="int(11)", default=0)
+        hourpv_8 = Optional(int, sql_type="int(11)", default=0)
+        hour_9 = Optional(int, sql_type="int(11)", default=0)
+        hourpv_9 = Optional(int, sql_type="int(11)", default=0)
+        hour_10 = Optional(int, sql_type="int(11)", default=0)
+        hourpv_10 = Optional(int, sql_type="int(11)", default=0)
+        hour_11 = Optional(int, sql_type="int(11)", default=0)
+        hourpv_11 = Optional(int, sql_type="int(11)", default=0)
+        hour_12 = Optional(int, sql_type="int(11)", default=0)
+        hourpv_12 = Optional(int, sql_type="int(11)", default=0)
+        hour_13 = Optional(int, sql_type="int(11)", default=0)
+        hourpv_13 = Optional(int, sql_type="int(11)", default=0)
+        hour_14 = Optional(int, sql_type="int(11)", default=0)
+        hourpv_14 = Optional(int, sql_type="int(11)", default=0)
+        hour_15 = Optional(int, sql_type="int(11)", default=0)
+        hourpv_15 = Optional(int, sql_type="int(11)", default=0)
+        hour_16 = Optional(int, sql_type="int(11)", default=0)
+        hourpv_16 = Optional(int, sql_type="int(11)", default=0)
+        hour_17 = Optional(int, sql_type="int(11)", default=0)
+        hourpv_17 = Optional(int, sql_type="int(11)", default=0)
+        hour_18 = Optional(int, sql_type="int(11)", default=0)
+        hourpv_18 = Optional(int, sql_type="int(11)", default=0)
+        hour_19 = Optional(int, sql_type="int(11)", default=0)
+        hourpv_19 = Optional(int, sql_type="int(11)", default=0)
+        hour_20 = Optional(int, sql_type="int(11)", default=0)
+        hourpv_20 = Optional(int, sql_type="int(11)", default=0)
+        hour_21 = Optional(int, sql_type="int(11)", default=0)
+        hourpv_21 = Optional(int, sql_type="int(11)", default=0)
+        hour_22 = Optional(int, sql_type="int(11)", default=0)
+        hourpv_22 = Optional(int, sql_type="int(11)", default=0)
+        hour_23 = Optional(int, sql_type="int(11)", default=0)
+        hourpv_23 = Optional(int, sql_type="int(11)", default=0)
+
+
+    return Plat_flightline_arrival
